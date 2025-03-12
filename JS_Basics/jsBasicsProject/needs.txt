@@ -1,0 +1,60 @@
+During this project assignment, you will be assessed on how well you have achieved the learning goals of this module and are now able to:
+
+•create variables with syntactically valid variable names
+•use if/else-statements
+•use loops
+•retrieve user input using prompts
+•code basic JavaScript
+•produce readable code that can be debugged
+•program a simple app
+
+
+
+During this project, you will create a small program that uses text interaction. You will need to apply all the concepts and skills you have learned about and mastered in this module:
+
+    Programming with JavaScript
+
+    Display with console.log
+
+    Numbers and mathematical operations
+
+    Variables and assigning values to variables (see issue report)
+
+    Strict mode
+
+    Comments
+
+    Semi-colons
+
+    Linting
+
+    Strings and string operations
+
+    Data types
+
+    Statements and expressions
+
+    User input: prompt
+
+    Casting
+
+    Booleans, Boolean operators and conditionals
+
+    Bugs and debugging
+
+    While loop
+
+    Arrays and array operations
+
+    For.. of loop & For loop
+
+    Objects and object operations
+
+    Task decomposition
+
+
+Evaluation
+
+This project will be evaluated by our mentors, who will give you feedback on what you did well, what you need to improve (need to haves), and/or what would be nice to improve (nice to haves) and on how you can make these improvements. 
+
+You can continue to make improvements and hand in the project for evaluation and feedback as often as necessary. You need a pass for this project to receive your certification at the end of the course. Many students fail the first time and submit the project several times, so don’t worry if this also happens to you.
