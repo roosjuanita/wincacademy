@@ -1,0 +1,49 @@
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  font-size: 1.5rem;
+} 
+
+
+input[type=text] {
+  width: 10rem;
+  height: 2rem;
+}
+
+input[type=text]:focus {
+  background-color: pink;
+}
+
+input[type=checkbox] {
+  height: 2rem;
+  width: 2rem;
+}
+
+input[type=checkbox]:checked {
+  box-shadow: 0 0 5px 2px red;
+}
+
+input[type=submit] {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(202, 55%, 71%);
+  border: none;
+  font-size: 1.5rem;
+}
+
+input[type=submit]:hover {
+  background-color: hsl(202, 78%, 32%);
+}
+
+.flex-center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

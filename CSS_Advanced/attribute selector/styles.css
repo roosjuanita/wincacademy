@@ -1,0 +1,57 @@
+body {
+  margin: 2rem;
+  background-color: hsl(214, 77%, 61%);
+  color: hsl(34, 77%, 61%);
+}
+
+h1 {
+  margin: 1em auto;
+}
+
+body > * ,
+li{
+  margin-bottom: 1em;
+}
+
+label, a {
+  display: block;
+}
+
+a {
+  color: hsl(34, 77%, 81%);
+}
+
+a[href^="http"] {
+  color: red;
+}
+
+a[href^="https"] {
+  color: yellow;
+}
+
+input[placeholder^="your"] {
+  font-weight: bold;
+}
+
+input[placeholder$="name"] {
+  background-color: lightcoral;
+}
+
+img[src^="squirrel"] {
+  border: 4px dotted white;
+}
+
+img[alt$="animal"] {
+  border: 2px solid black;
+}
+
+img[alt*="deer"] {
+  border: 2px solid white;
+}
+
+label > * {
+  width: 100%;
+}
+
+
+/* Use attribute selectors below.  */
