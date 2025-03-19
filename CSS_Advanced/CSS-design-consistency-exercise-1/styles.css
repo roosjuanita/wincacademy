@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url('Pacifico-Regular.ttf');
+}
+
+:root{
+  --primary-color: hsl(214, 77%, 61%);
+  --secondary-color: hsl(214, 77%, 81%);
+  --medium-size: 1rem;
+  --large-size: 2rem;
+
+}
+
+body {
+  margin: var(--large-size);
+  background-color: var(--primary-color);
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  font-size: var(--large-size);
+  font-weight: 400;
+  margin-bottom: var(--medium-size);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--medium-size);
+  margin-bottom: var(--medium-size);
+}
+
+.light-content-container {
+  background-color: var(--secondary-color);
+  padding: var(--large-size);
+  border-radius: var(--medium-size);
+}

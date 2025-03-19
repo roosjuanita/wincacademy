@@ -1,0 +1,42 @@
+body {
+  margin: 2rem;
+  background-color: hsl(214, 77%, 61%);
+  color: hsl(34, 77%, 61%);
+}
+
+h1 {
+  margin: 1em auto;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+main {
+  margin-top: 1em;
+}
+
+nav a {
+  color: hsl(74, 77%, 61%);
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+}
+
+/* Add CSS here.  */
+
+header > * {
+  padding: 0.5 rem;
+  border: 3px dashed red;
+}
+
+footer > * {
+  margin-top: 1rem;
+} 

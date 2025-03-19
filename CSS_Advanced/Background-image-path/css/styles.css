@@ -1,0 +1,25 @@
+body {
+  margin: 2rem;
+  background-color: hsl(214, 77%, 61%);
+  color: hsl(34, 77%, 61%);
+}
+
+h1 {
+  margin: 1em auto;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+body {
+  background-image: url("../images/code_blurred.webp");
+  background-color: #253043;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}

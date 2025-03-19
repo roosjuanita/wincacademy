@@ -1,0 +1,21 @@
+:root {
+    --primary-color: green;
+    --secondary-color: pink;
+
+    --medium-padding: 0.5rem;
+    --large-padding: 1rem;
+
+    --main-font-size: 16px;
+}
+
+.text1{
+    color: var(--primary-color);
+    padding: var(--medium-padding);
+    /* border: 10px dotted red; */
+}
+
+.text2{
+    color: var(--secondary-color);
+    padding: var(--large-padding);
+    /* border: 10px dotted blue; */
+}

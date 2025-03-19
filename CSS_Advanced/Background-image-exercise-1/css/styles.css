@@ -1,0 +1,76 @@
+body {
+  margin: 2rem;
+  color: hsl(34, 77%, 61%);
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23d1d1d1' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1 {
+  margin: 1em auto;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* .participants {
+  background-color: lightblue;
+  color: brown;
+  box-shadow: 20px 20px 30px lightgrey;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 > span {
+  background-color: orange;
+  color: white;
+  border-radius: 100%;
+  padding: 0.5rem;
+
+}
+
+img {
+  width: 16vw;
+  border: 10px solid orange;
+  padding: 0.5rem;
+  border-radius: 100%;
+  margin: 1rem;
+} */
+
+.participants {
+  box-shadow: 19px 19px 15px -3px rgba(0,0,0,0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: hsl(214, 77%, 91%);
+  color: hsl(34, 77%, 21%); 
+}
+
+.participants .header {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.participants .number {
+  background-color: hsl(34, 77%, 61%);
+  color: white;
+  padding: 0.25rem;
+  border-radius: 100%;
+  /* Actual centering is optically incorrect. See https://www.joshwcomeau.com/css/pixel-perfection/*/
+  padding-right: 5px;
+
+}
+
+.participants .photos img {
+  border-radius: 100%;
+  padding: 3px;
+  border: 3px solid hsl(34, 77%, 61%);
+  width: 16vw;
+  margin: 0 0.5rem 0.5rem 0;
+}
