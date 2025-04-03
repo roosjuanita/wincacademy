@@ -1,0 +1,21 @@
+/* Focus on this file. */
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 1em;
+}
+
+.container div:nth-child(1) {
+    grid-column-start: -6;
+    grid-column-end: -5;
+    grid-row-start: -5;
+    grid-row-end: -1;
+}
+
+.container div:nth-child(10) {
+    grid-column-start: -5;
+    grid-column-end: -1;
+    grid-row-start: -3;
+    grid-row-end: -2;
+}

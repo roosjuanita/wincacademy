@@ -1,0 +1,390 @@
+html, body {
+    min-width: 320px;  /* This prevents the page from shrinking below 320px */
+    width: 100%;
+    overflow-x: hidden;  /* Prevents horizontal scrolling */
+}
+
+/* Import Fonts */
+@font-face {
+    font-family: "DM Sans";
+    src: url(../fonts/DMSans) format("opentype");
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../fonts/Rubik.ttf) format("opentype");
+}
+
+
+:root {
+    /* colors */
+    --orange: hsl(35, 85%, 82%);
+    --lightorange: hsl(35, 85%, 96%);
+    --black: hsl(222, 5%, 10%);
+    --darkgrey: hsl(222, 5%, 15%);
+    --mediumgrey: hsl(222, 5%, 30%);
+    --hovergrey:hsl(222, 5%, 50%);
+    --lightgrey: hsl(222, 5%, 60%); 
+    --white: hsl(0, 0%, 99%); 
+    --selectionblue: hsl(205, 32%, 76%); 
+
+    /* fonts */
+    --main-font: "DMSans", sans-serif;
+    --main-font-bold: "Rubik", sans-serif;
+    --brand-font: Georgia, serif;
+
+    /* font sizes */
+    --font-size-base: 1.1rem; /* 16px */
+    --font-size-brand: 2rem; /* 24px */
+    --font-size-h2: 2.25rem; /* 36px */
+    --font-size-h2-bigger: 3rem; /* 36px */
+    --font-size-h1: 2.25rem; /* 36px */
+    --font-size-h1-bigger: 3rem; 
+
+    /* line heigths */
+    --line-height-body: 2;
+    --line-height-product: 1.7;
+    --line-height-h1: 1.5; 
+    --line-height-h2: 1.2; 
+    --line-height-h3: 1.1; 
+    --line-height-h2-bigger: 1.0; 
+   
+    /* padding */
+    --general-padding-text: 1.8em;
+    --general-padding-nontext: 1.8rem;
+}
+
+
+body {
+    font-family: var(--main-font);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-body);
+    font-weight: lighter;
+    color: var(--black);
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+	padding: 0;
+	border: 0;
+    min-width: 320px;
+}
+
+h1 {
+    font-family: var(--main-font-bold);
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: bold;
+    line-height: var(--line-height-h2);
+    padding-top: var(--general-padding-text);
+    padding-bottom: 0.1em;
+    margin: 0;
+}
+
+h3 {
+    font-size: var(--font-size-body);
+    font-weight: bold;
+    line-height: var(--line-height-h3);
+    padding-top: 2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+h4 {
+    color:var(--white);
+    padding-top: 2em;
+    font-weight: 500;
+    padding-bottom: 0;
+    letter-spacing: 0.5px;
+}
+
+
+.brand-name {
+    font-family: var(--brand-font);
+    font-size: var(--font-size-brand);
+    font-weight: 200 ;
+    color: var(--white);
+    margin-top: -0.2em;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hovergrey);
+}
+
+::selection {
+    background: var(--selectionblue);
+    color: black;
+    text-shadow: none;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    padding: 1rem var(--general-padding-nontext);
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.brand-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    font-size: 16px;
+    color: var(--darkgrey);
+    padding-left: 2.5em;
+    padding-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+.search-login-shop img {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding-left: 0.4em;
+}
+
+.search-login-shop img[src*="avatar"] {
+    display:none;
+}
+
+
+.landingpage {
+    display: grid;
+    position: relative;
+    background-color: var(--orange);
+    text-align: left;
+}
+
+.landingpage img {
+    max-width: 100vw;
+    min-width: 320px;  /* This prevents the page from shrinking below 320px */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.landing-txt {
+    margin: var(--general-padding-text);
+    margin-bottom: 3em;
+}
+
+.landing-txt button {
+    margin-top: 3rem;
+    border-radius: 40px;
+    padding: 15px 40px 15px 40px;
+    background-color: var(--black);
+    color: white;
+    border: black solid 1px;    
+}
+
+.featured {
+    display: flex;
+    padding: var(--general-padding-nontext);
+    display: block;
+    text-align: center;
+
+}
+
+.featured-products {
+    display: grid;
+    place-content: stretch center;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    gap: 1rem; /* Adds spacing between products */
+    width: 100%;
+    line-height: var(--line-height-product);
+}
+
+.price {
+    font-weight: bold;
+}
+
+.product-card {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content (image and text) horizontally */
+    justify-content: center; /* Vertically align, if needed */
+    text-align: center; 
+}
+
+.product-img {
+    width: 9em;
+    height: 12em;
+    padding-top: var(--general-padding-nontext);
+}
+
+.product-card img {
+    width: 100%; /* Ensure the image scales properly */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover;
+
+}
+
+.info {
+    background-color: var(--lightorange);
+    padding: var(--general-padding-nontext);
+    padding-bottom: 3rem;
+}
+
+.delivery-info {
+    text-align: left;
+}
+
+.contact {
+    padding: var(--general-padding-nontext);
+    padding-bottom: 4rem;
+}
+
+.contact p {
+    margin:0;
+    padding: 0.2em;
+
+}
+
+footer {
+    background-color: var(--darkgrey);
+    font-family: var(--brand-font);
+    color: var(--lightgrey);
+    padding: 0 var(--general-padding-nontext) 4rem var(--general-padding-nontext);
+}
+
+footer .links {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center horizontally */
+    gap: 0.5rem; /* Add spacing */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* For text alignment */
+}
+
+footer .links a {
+    text-decoration: none; /* Optional: removes underline */
+    cursor: pointer;
+    padding: 0rem 0.5rem; /* Adds padding inside each link */
+    margin: 0rem 0.5rem; /* Adds space around each link */
+    display: inline-block;
+    color: var(--lightgrey);
+    font-style: oblique;
+}
+
+
+@media (min-width: 900px) {
+
+    h2 {
+        font-size: var(--font-size-h2-bigger);
+        font-weight: bold;
+        line-height: var(--line-height-h2-bigger);
+        padding-top: var(--general-padding-text);
+        padding-bottom: 0.2em;
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: bold;
+        line-height: var(--line-height-h3);
+        padding-top: var(--general-padding-text);
+        padding-bottom: 0;
+        margin: 0;
+    }
+    
+    nav {
+    display: flex;
+    }
+
+    .search-login-shop img[src*="avatar"] {
+        display:inline;
+    }
+
+    .search-login-shop img[src*="menu"] {
+        display:none;
+    }
+
+    .landingpage {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 105vh;
+        background-color: var(--orange);
+        text-align: left;
+        align-items: stretch;
+    }
+
+    .landingpage div:nth-child(1) {
+        grid-column: 1 / 2;
+        height: 105vh; 
+        overflow: hidden;
+    }
+
+    .landing-img img {
+        width: 100%; /* Ensure the image scales properly */
+        height: 100%; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+
+    .landing-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        padding: 1rem 1rem 1rem 3rem; 
+        height: auto; 
+        min-height: 50%; 
+        box-sizing: border-box;
+    }
+
+    .landing-txt h1 {
+        font-size: 3.5rem;
+        line-height: var(--line-height-h3);
+        padding-top: 7rem;
+    }
+
+    .landing-txt button {
+        max-width: 300px;
+        width: auto; 
+        padding: 15px 40px;
+        border-radius: 40px;
+        background-color: var(--black);
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        align-self: flex-start; 
+    }
+
+    .about, .delivery-info {
+        margin: 0 auto; /* Ensures the 200px box is centered */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 40rem;
+    }
+    
+    .delivery-info h2 {
+        align-self: flex-start; 
+    }
+
+    .contact {
+        margin: 0 auto; /* Ensures the 200px box is centered */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 25em;
+        line-height: var(--line-height-product);
+    }
+
+}

@@ -1,0 +1,23 @@
+/* The margin may not grow beyond 48px. Use the devtools to check this.
+The margin may shrink below 48px, but needs to be 16px at a screen-width of 320px. Again, use the devtools to check this. */
+
+body {
+  background-color: hsl(214, 77%, 61%);
+  color: hsl(34, 77%, 61%);
+  margin: min(3rem, 5vw); 
+    /* 3rem is 48px en 320px * 0,05 = 16px  */
+}
+
+h1 {
+  margin: 1em auto;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+

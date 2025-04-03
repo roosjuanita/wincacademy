@@ -1,0 +1,63 @@
+/* This file does not contain any grid-relevant code. */
+
+:root {
+  --light-grey: hsl(231, 16%, 92%);
+  --blue: hsl(229, 22%, 40%);
+  --yellow: hsl(55, 84%, 61%);
+}
+
+body {
+  margin: 2rem;
+  background-color: var(--light-grey);
+  color: var(--blue);
+}
+
+pre {
+  font-size: 1rem;
+}
+
+
+h1 {
+  margin: 1em auto;
+}
+
+.container > div {
+  /* 
+  Just to make the item content look nicer.
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 0.25em;
+  font-size: 2rem;
+  
+}
+
+.container {
+  margin-bottom: 3rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+.container_a > div {
+  background-color: var(--yellow);
+}
+
+.container_b > div {
+  background-color: hsl(75, 84%, 61%);
+}
+
+.container_c > div {
+  background-color: hsl(35, 84%, 61%);
+}
+
+.container_d > div {
+  background-color: hsl(230, 84%, 81%);
+}
+
+.container_e > div {
+  background-color: hsl(175, 84%, 81%);
+}

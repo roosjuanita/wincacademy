@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 1rem;
+      background-color: #488FB1;
+      width: 100vw;
+      height: 50vh;
+    }
+
+    .flex-item {
+      background-color: #C1F8CF;
+      width: 25vw;
+      height: 25vh;
+      border-radius: 10px;
+    }
+
+    .flex-grow {
+      flex-grow: 2;
+    }
+
+    .flex-shrink {
+      flex-shrink: 2;
+
+    }
+
+    .flex-basis {
+      flex-basis: 50vw;
+
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item"></div>
+    <div class="flex-item flex-grow"></div>
+    <div class="flex-item"></div>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item flex-basis"></div>
+    <div class="flex-item flex-shrink"></div>
+    <div class="flex-item flex-basis"></div>
+    <div class="flex-item flex-shrink"></div>
+    <div class="flex-item"></div>
+  </div>
+</body>
+
+</html>

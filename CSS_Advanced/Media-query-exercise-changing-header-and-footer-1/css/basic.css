@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Tourney;
+    src: url(tourney.ttf);
+}
+
+
+/* https://piccalil.li/tutorial/creating-a-full-bleed-css-utility/ */
+
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+body {
+    background-color: hsl(0, 0%, 85%);
+    margin: 0 1rem;
+}
+
+header nav {
+    padding: 1rem;
+    background-color: hsl(71, 93%, 47%);
+}
+
+main,
+footer {
+    margin: 0 auto;
+    max-width: 20rem;
+    line-height: 1.4rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: Tourney, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: clamp(3rem, 13vw, 8rem);
+    margin: 2rem auto;
+    width: fit-content;
+    text-align: right;
+}
+
+header .links,
+header .icons {
+    justify-content: space-between;
+}
+
+footer nav a,
+header .links a {
+    color: hsl(0, 0%, 27%);
+    text-decoration: none;
+}
+
+header .links a {
+    padding: 0.75em 0.5em;
+    border: 1px solid hsl(0, 0%, 27%);
+    border-radius: 1em 2px 1em 2px;
+}
+
+header .links a:hover {
+    color: black;
+    background-color: hsl(0, 0%, 85%);
+}
+
+footer nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 5rem;
+}

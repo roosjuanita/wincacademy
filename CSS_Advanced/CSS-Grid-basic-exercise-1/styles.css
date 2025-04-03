@@ -1,0 +1,51 @@
+/* This file does not contain any grid-relevant code. */
+
+:root {
+  --light-grey: hsl(231, 16%, 92%);
+  --blue: hsl(229, 22%, 40%);
+  --yellow: hsl(55, 84%, 61%);
+}
+
+body {
+  background-color: var(--light-grey);
+  color: var(--blue);
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 1em;
+  background-color: var(--yellow);
+}
+
+nav {
+  background-color: var(--blue);
+  padding: 1em;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--yellow);
+  font-weight: bold;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  padding: 1em;
+  border: 3px solid transparent;
+}
+
+nav a.active, nav a:hover, nav a:focus {
+  display: block;
+  color: var(--blue);
+  background-color: var(--yellow);
+  border-color:var(--yellow);
+}
+
+main {
+  line-height: 1.5rem;
+  padding-top: 1.75em;
+  padding-left: 1.75em;
+}
+
+main p {
+  margin-bottom: 1.75em;
+}

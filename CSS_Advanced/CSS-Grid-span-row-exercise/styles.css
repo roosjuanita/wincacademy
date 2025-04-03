@@ -1,0 +1,30 @@
+/* This file does not contain any grid-relevant code. */
+
+:root {
+  --light-grey: hsl(231, 16%, 92%);
+  --blue: hsl(229, 22%, 40%);
+  --yellow: hsl(55, 84%, 61%);
+}
+
+body {
+  margin: 2rem;
+  background-color: var(--light-grey);
+  color: var(--blue);
+}
+
+h1 {
+  margin: 1em auto;
+}
+
+.container > div {
+  /* 
+  Just to make the item content look nicer.
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 0.25em;
+  font-size: 2rem;
+  background-color: var(--yellow);
+}

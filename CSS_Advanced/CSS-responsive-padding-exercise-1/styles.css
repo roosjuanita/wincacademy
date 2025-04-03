@@ -1,0 +1,28 @@
+body {
+  margin: 2rem;
+  background-color: hsl(214, 77%, 61%);
+  color: hsl(34, 77%, 61%);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 1em auto;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+main img {
+  width: 100%;
+}
+
+main > * {
+  border: 2px solid hsl(34, 77%, 61%);
+  margin-bottom: 1em;
+}
+
+main > p {
+  padding: clamp(0.75em, 5%, 2.75em);
+}

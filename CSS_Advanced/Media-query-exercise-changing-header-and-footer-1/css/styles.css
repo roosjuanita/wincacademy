@@ -1,0 +1,24 @@
+header .icons {
+    display: flex;
+}
+header .links {
+    display: none;
+}
+
+footer ul il {
+    display: block;
+}
+
+@media (min-width: 500px) {
+    
+    header .icons {
+        display: none;
+    }
+    header .links {
+        display: flex;
+    }
+
+    footer ul li  {
+        display: inline-block;
+    }
+}
