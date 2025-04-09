@@ -10,9 +10,9 @@ const discountGenerator = function (orderAmount) {
     else {
         return 0;
     }
-}
+};
 
-const order = prompt('How many cupcakes would you like to order? ')
+const order = prompt('How many cupcakes would you like to order? ');
 
 if (order >= MINIMUM) {
     console.log(`Your discount is ${discountGenerator(order)}%.`);
