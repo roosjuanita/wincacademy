@@ -4,7 +4,7 @@ const prompt = require("prompt-sync")();
     let addTopping = 'y'
     const toppings = [];
 
-const chooseToppings = (...toppings) => {
+const printChosenToppings = (...toppings) => {
     if (toppings.length === 0) {
         console.log('You chose no toppings\n')
     }
@@ -23,10 +23,10 @@ console.log("Note: just press enter if you don't have an ingredient in mind \n")
 
 const flavor = prompt("Which flavor do you want? ");
 const frosting = prompt("Which frosting do you want? ");
-chooseFlavorAndFrosting(flavor, frosting)
+setPreferences(flavor, frosting)
 
 
-function chooseFlavorAndFrosting(flavor, frosting) {
+function setPreferences(flavor, frosting) {
     const flavors = ['Strawberry', 'Chocolate', 'Vanilla', 'Mint Chocolate Chip']
     const frostings = ['chocolate', 'vanilla', 'strawberry', 'mint']
 
@@ -50,5 +50,5 @@ function chooseFlavorAndFrosting(flavor, frosting) {
     }
 
     console.log(`\nYour Crazy Cupcake surprise is a ${flavor} cupcake with ${frosting} frosting. \n`);
-    chooseToppings(...toppings);
+    printChosenToppings(...toppings);
 };
