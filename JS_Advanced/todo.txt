@@ -1,0 +1,8 @@
+Get a list of students that speak French
+
+Get a list of students that speak Spanish
+
+Get a list of students that speak German
+
+    Only use the filter() method
+
