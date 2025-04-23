@@ -1,8 +1,8 @@
-Get a list of students that speak French
+Use the Array.reduce() method to calculate the total price of all products in shoppingCart.
 
-Get a list of students that speak Spanish
+Also take into account the quantity property of an item by multiplying the quantity times the price.
 
-Get a list of students that speak German
+Make sure to work with an initial value, as you would otherwise not be able to retrieve the price & quantity from the first item unless you add some unnecessary code.
 
-    Only use the filter() method
+    Log the results in the console. It should be 35.41. 
 
