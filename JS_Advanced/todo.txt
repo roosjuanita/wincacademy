@@ -1,0 +1,37 @@
+> JavaScript Functions <
+
+Create and use pure functions.
+Define and use parameters and arguments
+Use decomposition to split code into smaller more manageable parts.
+
+*** need to apply ***
+Function Basics
+Functions with(out) Parameters
+Parameters
+Best Practices
+Other Stuff
+Debugging Functions
+Functions and Methods
+
+
+> JavaScript Advanced <
+
+Use the spread operator
+Use immutable & mutable operations
+Use multiple array methods such as find, every, some, map, filter, reduce
+Unpack or destructure objects & arrays
+Use JSON to read data from files
+
+*** need to apply ***
+Spread operator
+Immutable/mutable operations
+Keep functions pure
+Destructuring
+Array operations with callback functions
+Array find
+Array: every and some
+Array map
+Array forEach
+Array reduce
+Decomposing problems using functions
+JSON: JavaScript Object Notation
