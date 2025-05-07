@@ -1,3 +1,5 @@
+// Hi! Feedback in either Dutch or English is fine, whatever you prefer. Thank you for checking my assignment!
+
 'use strict';
 const prompt = require('prompt-sync')();
 
