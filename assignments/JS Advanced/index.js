@@ -17,7 +17,7 @@ const findAuthors = recipeCollection => {
 
   recipeCollection.forEach( recipe => {
     if (!authorList.includes(recipe.Author)) {
-      
+
       authorList.push(recipe.Author)
     }
   });
@@ -164,8 +164,7 @@ do {
       } 
 
       console.log(`\n---------------------------------------`)
-      console.log(`\nINGREDIENTS OF ALL SAVED RECIPES: \n`)
-      printNames(savedRecipes)
+      console.log(`\nALL INGREDIENTS OF SAVED RECIPES: \n`)
       console.log(getAllIngredients(savedRecipes))
       console.log(`\n---------------------------------------`)
       break;
