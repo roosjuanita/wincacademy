@@ -1,0 +1,13 @@
+{
+  "name": "bakery",
+  "version": "1.0.0",
+  "description": "An application for a new bakery",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon –quiet"
+  },
+  "author": "Roos Pollmann",
+  "license": "ISC",
+  "keywords": [],
+  "type": "module"
+}
